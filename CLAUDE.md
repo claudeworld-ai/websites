@@ -28,7 +28,8 @@
 3. **Провести сайт по пайплайну**, вызывая субагентов через инструмент
    Agent в этом порядке (каждый следующий должен получить путь к брифу и
    к файлам предыдущего этапа):
-   1. `content-writer` → пишет `sites/<slug>/content/*.md`
+   1. `content-writer` → пишет `sites/<slug>/content/*.md` (структуру
+      секций и sitemap определяет по скиллу `landing-page-structure`)
    2. `designer` → пишет `sites/<slug>/design/style-guide.md`
    3. `developer` → собирает сайт в `sites/<slug>/` (структуру решает сам,
       см. `docs/workflow.md`)
